@@ -1,0 +1,76 @@
+.main-photo {
+    height: 70vh;
+    background-image: url("img/granaty.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80vw;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    background-position-x: center;
+}
+
+.text-bottom {
+    color: #fff;
+}
+
+body {
+    background-image: url("img/main-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    font-family: "Museo-Sans", sans-serif;
+}
+
+.text-center {
+    text-align: center;
+
+}
+
+ul {
+    display: inline-block;
+}
+
+.results {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    width: 30vw;
+    border: 1px solid #a6ce39;
+    background-color: #a6ce39;
+    border-radius: 10px;
+}
+
+/* footer */
+.footer-heart {
+    color: aliceblue;
+    text-align: center;
+    font-family: open sans, sans-serif;
+}
+
+.footer-heart a {
+    padding-bottom: .25em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-heart a:hover {
+    color: #2ec218;
+    border-bottom: 0;
+    padding-bottom: .3em;
+    text-decoration: none;
+}
+
+.author {
+    color: #fff;
+}
+
+.author .love {
+    display: none;
+}
+
+.author:hover .roza {
+    display: none;
+}
+
+.author:hover .love {
+    display: inline;
+}
