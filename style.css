@@ -9,15 +9,16 @@
     background-position-x: center;
 }
 
-.text-bottom {
-    color: #fff;
-}
+
+
 
 body {
-    background-image: url("img/main-bg.jpg");
+    color: #fff;
+    background-color: navy;
+    /* background-image: url("img/main-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: center;
+    background-position-y: center; */
     font-family: "Museo-Sans", sans-serif;
 }
 
@@ -73,4 +74,14 @@ ul {
 
 .author:hover .love {
     display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-photo {
+        height: 30vh;
+    }
+
+    .results {
+        width: 50vw;
+    }
 }
