@@ -1,48 +1,114 @@
-.main-photo {
-    height: 70vh;
-    background-image: url("img/granaty.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 80vw;
-    margin-left: 50%;
-    transform: translate(-50%, 0);
-    background-position-x: center;
+img {
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.title {
+    color: #094C9A;
 }
 
 
-
-
-body {
-    color: #fff;
-    background-color: navy;
-    /* background-image: url("img/main-bg.jpg");
+.option-img {
+    position: relative;
+    margin-top: 10vh;
+    height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: center; */
-    font-family: "Museo-Sans", sans-serif;
+    background-position: center;
+    z-index: 2;
 }
 
-.text-center {
+.option-img button.show {
+    margin-left: 25%;
     text-align: center;
+    animation: onShow 1s forwards;
+    transform: translateX(-20%);
 
 }
 
-ul {
-    display: inline-block;
+@keyframes onShow {
+    from {
+        width: auto;
+    }
+
+    10% {
+        width: 34%;
+    }
+
+
+    to {
+        width: 60%;
+    }
 }
 
-.results {
+.option-img button {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: large;
+    padding: 5%;
+    font-weight: 300;
+    transition: all 1s linear;
+}
+
+.grey::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.option-img-1 {
+    background-image: url("img/start-1.jpg");
+}
+
+.option-img-2 {
+    background-image: url("img/start-2.jpg");
+}
+
+.option-img-3 {
+    background-image: url("img/start-3.jpg");
+}
+
+.section-title {
+    margin-top: 5vh;
+}
+
+/* zaproszenie */
+.section-content {
+    height: 100vh;
+}
+
+.letter {
+    margin-top: 5%;
+    background-color: antiquewhite;
+    min-height: 30vh;
+}
+
+/* wedrowka */
+#wedrowka {
+    height: 100vh;
+}
+
+.wedrowka-img {
+    margin-top: 4%;
     margin-left: 50%;
-    transform: translate(-50%, 0);
-    width: 30vw;
-    border: 1px solid #a6ce39;
-    background-color: #a6ce39;
-    border-radius: 10px;
+    transform: translateX(-50%);
+    max-height: 80vh;
 }
+
+
 
 /* footer */
 .footer-heart {
-    color: aliceblue;
+    color: gray;
     text-align: center;
     font-family: open sans, sans-serif;
 }
@@ -50,7 +116,7 @@ ul {
 .footer-heart a {
     padding-bottom: .25em;
     text-decoration: none;
-    color: #fff;
+    color: gray;
 }
 
 .footer-heart a:hover {
@@ -61,7 +127,7 @@ ul {
 }
 
 .author {
-    color: #fff;
+    color: gray;
 }
 
 .author .love {
@@ -76,13 +142,31 @@ ul {
     display: inline;
 }
 
-@media only screen and (max-width: 600px) {
-    .main-photo {
-        height: 30vh;
-    }
 
-    .results {
-        text-align: left;
-        width: 50vw;
-    }
+
+
+/* to the top! */
+
+.stt {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #094C9A url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+    box-shadow: 0 0.25rem 0.5rem 0 gray;
+    opacity: 0.7;
+}
+
+.stt:hover {
+    opacity: 0.8;
+}
+
+.stt:focus {
+    opacity: 0.9;
+}
+
+.stt:active {
+    opacity: 1;
 }
