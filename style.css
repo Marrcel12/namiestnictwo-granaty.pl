@@ -2,6 +2,18 @@ img {
     max-width: 100%;
 }
 
+@font-face {
+    font-family: 'Museo';
+    font-weight: normal;
+    font-style: normal;
+    src: url('Museo-700.ttf');
+}
+
+* {
+    font-family: 'Museo';
+
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
