@@ -65,6 +65,16 @@ html {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.grey2::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .option-img-1 {
     background-image: url("img/start-1.jpg");
 }
@@ -104,42 +114,62 @@ html {
     max-height: 80vh;
 }
 
-
-
-/* footer */
-.footer-heart {
-    color: gray;
-    text-align: center;
-    font-family: open sans, sans-serif;
+/* Postęp */
+#postep .section-title {
+    margin-bottom: 4%;
 }
 
-.footer-heart a {
-    padding-bottom: .25em;
-    text-decoration: none;
-    color: gray;
+.team {
+    height: 23vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 8%;
+
 }
 
-.footer-heart a:hover {
-    color: #2ec218;
-    border-bottom: 0;
-    padding-bottom: .3em;
-    text-decoration: none;
+#ruwenzori {
+    background-image: url("img/ruwenzori.jpg");
 }
 
-.author {
-    color: gray;
+#skaut {
+    background-image: url("img/skaut.png");
+
 }
 
-.author .love {
-    display: none;
+#iter {
+    background-image: url("img/iter.png");
+
 }
 
-.author:hover .roza {
-    display: none;
+#wyssogota {
+    background-image: url("img/wyssogota.jpg");
+
 }
 
-.author:hover .love {
-    display: inline;
+#bukowina {
+    background-image: url("img/bukowina.png");
+
+}
+
+#knieja {
+    background-image: url("img/knieja.jpg");
+
+}
+
+#adsum {
+    background-image: url("img/adsum.jpg");
+
+}
+
+#galeon {
+    background-image: url("img/galeon.jpg");
+
+}
+
+#custodia {
+    background-image: url("img/custodia.png");
+
 }
 
 
@@ -157,6 +187,7 @@ html {
     background: #094C9A url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
     box-shadow: 0 0.25rem 0.5rem 0 gray;
     opacity: 0.7;
+    z-index: 1000;
 }
 
 .stt:hover {
@@ -169,4 +200,62 @@ html {
 
 .stt:active {
     opacity: 1;
+}
+
+/* flip-card */
+.flipcard {
+    perspective: 800;
+    -moz-perspective: 800;
+    -webkit-perspective: 800;
+    margin: 1em auto;
+    width: 80%;
+    border: solid 1em white;
+    border-radius: 0.5em;
+    font-family: Georgia;
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    cursor: pointer;
+}
+
+.flipcard:hover {
+    box-shadow: 0 0 1em black;
+}
+
+.flipcard.flipped {
+    transform: rotatey(-180deg);
+    -moz-transform: rotatey(-180deg);
+    -webkit-transform: rotatey(-180deg);
+}
+
+.flipcard .face {
+    padding: 1em;
+    text-align: center;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flipcard .front {
+    color: white;
+    display: block;
+}
+
+.flipcard.flipped .front {
+    display: none;
+}
+
+.flipcard .back {
+    color: black;
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    display: none;
+}
+
+.flipcard.flipped .back {
+    display: block;
 }
