@@ -52,12 +52,12 @@ html {
     }
 
     10% {
-        width: 34%;
+        width: 50%;
     }
 
 
     to {
-        width: 60%;
+        width: 70%;
     }
 }
 
