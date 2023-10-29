@@ -97,8 +97,8 @@ html {
 }
 
 .letter {
-    margin-top: 5%;
-    background-color: antiquewhite;
+    margin-top: 4%;
+    /* background-color: antiquewhite; */
     min-height: 30vh;
 }
 
