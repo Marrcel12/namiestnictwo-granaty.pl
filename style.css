@@ -120,11 +120,11 @@ html {
 }
 
 .team {
-    height: 23vh;
+    height: 22vh;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 8%;
+    /* margin-bottom: 8%; */
 
 }
 
@@ -249,11 +249,18 @@ html {
 }
 
 .flipcard .back {
-    color: black;
+    text-align: center;
+    font-size: large;
+    color: #094C9A;
     transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     display: none;
+}
+
+.flipcard .back p {
+    margin-top: 15%;
+    /* transform: translateY(-75%); */
 }
 
 .flipcard.flipped .back {
