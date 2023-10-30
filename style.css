@@ -107,15 +107,18 @@ html {
     margin-top: 5vh;
 }
 
-/* zaproszenie */
 .section-content {
     margin-top: 2vh;
     height: 100vh;
 }
 
+/* zaproszenie */
+#zaproszenie {
+    height: auto;
+}
+
 .letter {
     margin-top: 4%;
-    /* background-color: antiquewhite; */
     min-height: 30vh;
 }
 
